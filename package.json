@@ -1,0 +1,34 @@
+{
+  "name": "blog-backend",
+  "version": "0.0.1",
+  "description": "Simple API to build your own blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeftaliCruzSosa/proyecto_final_react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeftaliCruzSosa/proyecto_final_react/issues"
+  },
+  "homepage": "https://github.com/NeftaliCruzSosa/proyecto_final_react#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.32.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2",
+    "mongoose-unique-validator": "^3.1.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
