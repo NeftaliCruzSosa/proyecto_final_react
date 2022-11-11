@@ -4,8 +4,10 @@ const cors = require("cors");
 const db = require("./src/util/database/db");
 require("dotenv").config();
 
-//* Añadir rutas
-const indexRoutes = require("./src/api/index/index.routes");
+const indexRoutes = require("./src/api/routes/index.routes");
+const usersRoutes = require("./src/api/routes/users.routes");
+const postsRoutes = require("./src/api/routes/posts.routes");
+const commentsRoutes = require("./src/api/routes/comments.routes");
 
 db.connectDb();
 
@@ -25,10 +27,14 @@ server.use(
   })
 );
 
-server.use("/", indexRoutes);
-
 server.use(express.json({limit: "5mb"}));
 server.use(express.urlencoded({ extended: false }));
+
+server.use("/", indexRoutes);
+server.use("/users", usersRoutes);
+server.use("/posts", postsRoutes);
+server.use("/comments", commentsRoutes);
+
 
 server.use("", (req, res) => {
   return res.status(404).json("Ruta no encontrada");
