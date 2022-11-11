@@ -6,7 +6,7 @@ const { isAuth, isAdmin } = require("../../middleware/auth");
 
 router.get("/", async (req, res) => {
   try {
-    const allPosts = await Post.find().populate("author").populate("comments");
+    const allPosts = await Post.find().populate("comments");
     return res.status(200).json(allPosts);
   } catch (error) {
     return res.status(500).json("Error al leer los posts");
@@ -27,7 +27,7 @@ router.get("/getbyauthor/:author", async (req, res, next) => {
   try {
     const author = req.params.author;
     const authorID = await User.findOne({ username: author });
-    const postToFind = await Post.find({ author: authorID });
+    const postToFind = await Post.find({ author: authorID }).populate("comments");
     return res.status(200).json(postToFind);
   } catch (error) {
     return next(error);
