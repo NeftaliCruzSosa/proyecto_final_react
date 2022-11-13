@@ -36,6 +36,14 @@ router.post("/logout", async (req, res) => {
 
 });
 
+router.post("/checksession", [isAuth], (req, res, next) => {
+  try {
+    return res.status(200).json(req.user);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+});
+
 router.post("/create", async (req, res) => {
     try {
       const user = req.body;
