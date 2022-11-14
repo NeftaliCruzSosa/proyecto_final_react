@@ -9,8 +9,8 @@ const postsSchema = new Schema(
     text: { type: String, required: true, trim: true },
     ingredients: [
       {
-        name: { type: String, required: true, trim: true },
-        quantity: { type: String, required: true, trim: true },
+        name: { type: String, trim: true },
+        quantity: { type: String, trim: true },
       },
     ],
     author: { type: mongoose.Types.ObjectId, ref: "users", required: true },

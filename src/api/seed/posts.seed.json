@@ -1,0 +1,102 @@
+{
+    "title":"Papas con choco",
+    "subtitle":"Como las hace Mama",
+    "text":"1.Comenzamos con el sofrito.Picamos la cebolla,el pimiento y los ajos y los añadimos a la sarten con un chorrito de aceite.\n2.Una vez que lo tenemos pochado,es el momento de añadir el tomate y el pimenton.Mientras se sofrie el conjunto,vamos troceando el choco en dados y pelando las patatas.Cuando tenemos las patatas peladas procedemos a cortarlas y chascarlas:es decir, en vez de cortar hasta el final cada trozo,lo terminamos de separar con la mano.Con esta tecnica facilitamos que se espese el guiso sin necesidad de añadir harina ni otros espesantes.\n3.Incorporamos el choco y las patatas cortadas a nuestro sofrito,añadimos el vaso de vino blanco y subimos el fuego.Es el momento de añadir el agua hasta cubrir las patatas junto con la sal,perejil y el laurel .Dejamos cocinar a fuego medio hasta que las patatas esten tiernas y ya podremos disfrutar de un exquisito guiso.\n\n¡Disfrutalo y buen provecho!",
+    "ingredients": [
+    {
+    "name":"Patatas",
+    "quantity":" 4 unid"
+    },
+    {
+    "name":"Choco",
+    "quantity":" 1 kg"
+    },
+    {
+    "name":"Pimiento verde",
+    "quantity":" 1 unid"
+    },
+    {
+    "name":"Cebolla",
+    "quantity":" 1 unid"
+    },
+    {
+    "name":"Ajo",
+    "quantity":" 2 dientes"
+    },
+    {
+    "name":" Tomate",
+    "quantity":" 1 unid "
+    },
+    {
+    "name":"Perejil",
+    "quantity":" 1 cda"
+    },
+    {
+    "name":"Laurel",
+    "quantity":" 2 hojas"
+    },
+    {
+    "name":"Vino blanco",
+    "quantity":" 1 vaso"
+    },
+    {
+    "name":"Colorante",
+    "quantity":" 1 cdta"
+    },
+    {
+    "name":"Sal",
+    "quantity":" 1 cdta"
+    },
+    {
+    "name":"Agua",
+    "quantity":" 1/2 lit"
+    }
+    ],
+    "cooktime": "1h 45min",
+    "img":"https://th.bing.com/th/id/OIP.hpdoOtxd5slo6bq54WNqzgHaGU?pid=ImgDet&rs=1",
+    "section": "guiso"
+}
+
+{
+    "title":"Chicharrones",
+    "subtitle":"Lo mejor del sur",
+    "text":"1.Comencemos troceando la carne de cerdo en pedazos medianos.Luego incorporarlos en un recipiente con agua y bicarbonato de sodio.Deja reposar el cerdo durante 1h.\n2.Pasado el tiempo,saca el cerdo del recipiente,lavalo y secalo con papel absorbente.En una olla de fondo hondo,agrega el cerdo,sal,oregano,pimienta,el zumo de limon y 2 litros de agua.\n3.Cuece la preparacion a fuego medio y con la olla destapada hasta que todo el liquido se evapore y quede solamente la grasa de la carne.\n4.Luego,vierte la taza de aceite en una olla honda de aluminio o hierro y cuando este bien caliente,añade el cerdo y frie con la olla tapada hasta que la carne este bien dorada y la piel crujiente .\n5.Al momento de freír el cerdo ten mucho cuidado al destapar la olla, ya que puede haber salpicadura de aceite muy caliente y puedes quemarte el rostro, los brazos o las manos.\n6.Retira el cerdo y colócalo en un plato con papel absorbente. Deja enfriar durante 10 minutos. Pasado el tiempo estará listo tu chicharrón de cerdo crujiente para servir.\n\n¡Disfrutalo y buen provecho!",
+    "ingredients": [
+    {
+    "name":"panza de cerdo",
+    "quantity":" 2 kg"
+    },
+    {
+    "name":"agua",
+    "quantity":" 2 lit"
+    },
+    {
+    "name":"sal",
+    "quantity":" 2 cda"
+    },
+    {
+    "name":"oregano",
+    "quantity":" 1/2 cda"
+    },
+    {
+    "name":"pimienta",
+    "quantity":" 1/2 cda"
+    },
+    {
+    "name":" zumo de limon ",
+    "quantity":" 1/4 de taza "
+    },
+    {
+    "name":"aceite vegetal",
+    "quantity":" 1 taza"
+    },
+    {
+    "name":"bicarbonato de sodio",
+    "quantity":" 2 cda"
+    }
+    
+    ],
+    "cooktime": "1h 45min",
+    "img":"https://www.saboreandocadiz.es/wp-content/uploads/2021/12/Chicharron.jpg",
+    "section": "otro"
+    }
