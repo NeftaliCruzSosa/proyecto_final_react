@@ -22,6 +22,7 @@ const postsSchema = new Schema(
         ref: "comments",
       },
     ],
+    section: { type: String, required: true, enum: ["guiso", "ensalada", "postre", "cocktail", "otro"]}
   },
   {
     timestamps: true,
