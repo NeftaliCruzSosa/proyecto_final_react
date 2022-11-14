@@ -13,7 +13,7 @@ const postsSchema = new Schema(
         quantity: { type: String, trim: true },
       },
     ],
-    author: { type: mongoose.Types.ObjectId, ref: "users", required: true },
+    author: { type: mongoose.Types.ObjectId, ref: "users"},
     cookTime: { type: String },
     img: { type: String, required: true },
     comments: [
