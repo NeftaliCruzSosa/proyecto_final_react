@@ -6,6 +6,16 @@ const bcrypt = require("bcrypt");
 const { generateSign } = require("../../util/jwt/jwt");
 
 
+router.get("/:id", async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    const userToFind = await User.findById(id);
+    return res.status(200).json(userToFind.username);
+  } catch (error) {
+    return next(error);
+  }
+});
+
 router.post("/login", async (req, res) => {
 
     try {
