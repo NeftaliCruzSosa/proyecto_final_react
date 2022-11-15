@@ -18,7 +18,7 @@ cloudinary.config({
 });
 
 const server = express();
-const PORT = 3000;
+const PORT = 8080;
 
 server.use(
   cors({

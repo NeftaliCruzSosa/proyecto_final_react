@@ -36,10 +36,11 @@ router.get("/getbyauthor/:author", async (req, res, next) => {
 });
 
 router.post("/create", [isAuth], upload.single("img"), async (req, res) => {
-  
   try {
     const userID = req.user._id.toString();
     const post = req.body;
+    const parsedIngredients = JSON.parse(post.ingredients)
+    post.ingredients = parsedIngredients
     if (req.file) {
       post.img = req.file.path;
     }
