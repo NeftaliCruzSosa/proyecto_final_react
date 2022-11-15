@@ -2,6 +2,7 @@ const express = require("express");
 const Post = require("../models/posts.model");
 const User = require("../models/users.model");
 const router = express.Router();
+const upload = require("../../middleware/file");
 const { isAuth, isAdmin } = require("../../middleware/auth");
 
 router.get("/", async (req, res) => {
@@ -34,13 +35,16 @@ router.get("/getbyauthor/:author", async (req, res, next) => {
   }
 });
 
-router.post("/create", [isAuth], async (req, res) => {
+router.post("/create", [isAuth], upload.single("img"), async (req, res) => {
+  
   try {
     const userID = req.user._id.toString();
     const post = req.body;
+    if (req.file) {
+      post.img = req.file.path;
+    }
     post.author = userID;
     const newPost = new Post(post);
-    console.log(newPost)
     const created = await newPost.save();
     return res.status(201).json(created);
   } catch (error) {
